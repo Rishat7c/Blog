@@ -74,7 +74,9 @@ client.newCall(request).enqueue(new Callback() {
             public void onResponse(Call call, Response response) throws IOException {
                 if (response.isSuccessful()){ 
                     try {
-                        category = gson.fromJson(response.body().charStream(), Auth.class);
+                        auth = gson.fromJson(response.body().charStream(), Auth.class);
+                         Log.i("GSON", "ID: " + auth.result.sECRET.get(0).getUSER()); // Получим '1'
+                         Log.i("GSON", "LOGIN: " + auth.result.sECRET.get(1).getNAME()); // Получим 'Rishat7c'
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
