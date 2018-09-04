@@ -49,12 +49,12 @@
 
 #### Java
 
-Для этого я использую библиотеку okHTTP3 (https://github.com/square/okhttp). Чтобы добавить библиотеку в наш проект, заходим в build.gradle и добавляем в секцию «dependencies» стоку:
-> 'com.squareup.okhttp3:okhttp:3.8.1'
+Для POST/GET запросов использую библиотеку okHTTP3 (https://github.com/square/okhttp). Чтобы добавить библиотеку в наш проект, заходим в build.gradle и добавляем в секцию «dependencies» строку:
+> implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 
 и сразу добавим библиотеку GSON
 
-> compile 'com.google.code.gson:gson:2.8.0'
+> implementation 'com.google.code.gson:gson:2.8.5'
 
 Выполняем синхронизацию Gradle.
 
