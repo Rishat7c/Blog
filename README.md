@@ -26,9 +26,9 @@
     "ACTION":"check",
     "PARAMETERS":
     {
-      "login":"admin",
-      "pass":"test"
-    },"SECRET":
+      "uid":"0001",
+    },
+    "SECRET":
     	[
           {
             "USER":"1"
