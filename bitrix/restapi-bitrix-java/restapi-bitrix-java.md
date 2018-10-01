@@ -14,7 +14,7 @@
 
 Имеется ответ от сервера
 
-```sh {
+```json {
   "status":200,
   "result":
   {
@@ -60,7 +60,7 @@
 
 Переходим в класс, в котором будем делать запрос к серверу, для простоты мы будем делать это в MainActivity метод onCreate.
 
-```sh
+```java
 Request request = new Request.Builder()
                 .url("http://example.com/api-mobile/mobile/check/?uid=" + userid)
                 .build();
